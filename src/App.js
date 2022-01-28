@@ -1,11 +1,16 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
-import MapMethod from "./MapMethod";
 
 function App() {
+  const students = ["Mureed", "Hussain", "Umar", "Aamir"];
+  students.map((data) => {
+    console.log(data);
+  });
   return (
-    <div>
-      <MapMethod />
+    <div className="App">
+      {students.map((data) => (
+        <h1>{data}</h1>
+      ))}
     </div>
   );
 }
