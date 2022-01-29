@@ -1,18 +1,13 @@
 import React from "react";
-import "./App.css";
+import Map from "./Map";
+import NewStudy from "./NewStudy";
 
-function App() {
-  const students = ["Mureed", "Hussain", "Umar", "Aamir"];
-  students.map((data) => {
-    console.log(data);
-  });
+const App = () => {
   return (
-    <div className="App">
-      {students.map((data) => (
-        <h1>{data}</h1>
-      ))}
+    <div>
+      <NewStudy />
     </div>
   );
-}
+};
 
 export default App;
